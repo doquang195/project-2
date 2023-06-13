@@ -1,0 +1,250 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .toggle-menu {
+        display: none;
+    }
+
+    .header-res {
+        display: none;
+    }
+}
+
+/* TABLET + MOBILE */
+@media screen and (max-width: 991px) {
+    .fixed {
+        top: -18px;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .header .body {
+        position: relative;
+    }
+
+    .bar-icon {
+        width: 34px;
+        color: #333;
+    }
+
+    .header .logo {
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background-color: #fff;
+        z-index: 2;
+        padding: 60px;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .check-bar:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .check-bar:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .nav ul {
+        margin-top: 60px;
+        flex-flow: column;
+    }
+
+    .nav a {
+        display: block;
+        padding: 25px 0px;
+    }
+
+    .header .action {
+        margin-left: auto;
+    }
+
+    .hero .media-block {
+        display: none;
+    }
+
+    .hero .content-block {
+        width: 90%;
+        padding-top: 64px;
+        text-align: center;
+    }
+
+    .hero .cta-group {
+        justify-content: center;
+    }
+
+    .popular .course-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature .body {
+        flex-direction: column-reverse;
+        row-gap: 32px;
+    }
+
+    .feature-2 .body {
+        flex-direction: column;
+    }
+
+    .feature .body .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature .body .desc {
+        width: 100%;
+    }
+
+    .footer .desc {
+        width: 220px;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    .main-content {
+        max-width: calc(100% - 32px);
+    }
+
+    .menu-drawer {
+        inset: 0 20% 0 0;
+    }
+
+    .header .sign-up-btn {
+        min-width: 100px;
+    }
+
+    .hero .heading {
+        font-size: 4.5rem;
+    }
+
+    .hero .content-block {
+        width: 100%;
+        padding-top: 34px;
+        padding-left: 0;
+    }
+
+    .hero-btn {
+        min-width: 160px;
+    }
+
+    .popular {
+        padding: 120px 0;
+    }
+
+    .popular .popular-top {
+        flex-direction: column;
+        row-gap: 34px;
+    }
+
+    .popular-top .desc {
+        width: 100%;
+    }
+
+    .popular .course-list {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback .feedback-item {
+        flex-direction: column;
+        row-gap: 34px;
+    }
+
+    .feedback-item .infor {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .feedback-item .content {
+        width: 100%;
+    }
+
+    .feature {
+        margin-top: 70px;
+    }
+
+    .feature .body .images {
+        width: 100%;
+    }
+
+    .feature .images img {
+        width: 100%;
+    }
+
+    .feature .images img.lower {
+        display: none;
+    }
+
+    .feature-2 {
+        margin-top: 20px;
+    }
+
+    .feature-2 .images img {
+        width: 100%;
+    }
+
+    .blog {
+        margin-top: 70px;
+    }
+
+    .blog .blog-top .desc {
+        width: 100%;
+    }
+
+    .blog .blog-list {
+        flex-direction: column;
+    }
+
+    .blog .blog-list .item {
+        width: 100%;
+    }
+
+    .footer .row {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+
+    .footer .row .column:first-child {
+        width: 100%;
+    }
+
+    .footer .row .column {
+        width: 100%;
+    }
+
+    .blog-list .item:nth-child(4),
+    .blog-list .item:nth-child(5),
+    .blog-list .item:nth-child(6),
+    .blog-list .item:nth-child(7),
+    .blog-list .item:nth-child(8),
+    .blog-list .item:nth-child(9) {
+        display: none;
+    }
+}
